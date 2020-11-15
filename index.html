@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>CPS 530: Lab 07</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"/>
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script src="jquery.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+    html, body {
+        font-family: sans-serif;
+        font-size: 16px;
+        text-align: center;
+    }
+    #potato-head {
+        height: auto;
+        width: 500px;
+        margin: 20px auto;
+        background: white;
+        padding: 2px;
+        padding-bottom: 10%;
+    }
+    .parts {
+        cursor: pointer;
+    }
+
+    </style>
+    <script>
+    $(function () {
+        $(".parts").draggable()
+    });
+    </script>
+</head>
+    <body>
+        <h1>Potato Head puzzle</h1>
+        <img src="potato-head-parts/potato-head.jpg" height="200"></img>
+        <div id="potato-head">
+            <br><br>
+            <h3>Drag and Drop The Parts</h3>
+            <br><br>
+            <img src="potato-head-parts/Body.png"></img>
+            <div>
+                <img class="parts" src="potato-head-parts/Arms.png"></img>
+                <img class="parts" src="potato-head-parts/Ears.png"></img>
+                <img class="parts" src="potato-head-parts/Eyebrows.png"></img>
+
+                <img class="parts" src="potato-head-parts/Eyes.png"></img>
+                <img class="parts" src="potato-head-parts/Hat.png"></img>
+                <img class="parts" src="potato-head-parts/Mouth.png"></img>
+
+                <img class="parts" src="potato-head-parts/Mustache.png"></img>
+                <img class="parts" src="potato-head-parts/Nose.png"></img>
+            </div>
+        </div>
+    </body>
+</html>
